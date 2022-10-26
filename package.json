@@ -2,7 +2,7 @@
   "homepage": "http://Thiago-dcode.github.io/pokedex",
   "name": "y",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@testing-library/jest-dom": "^5.16.4",
