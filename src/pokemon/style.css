@@ -1,0 +1,511 @@
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 2rem;
+}
+
+.container {
+  gap: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-child {
+  width: 100%;
+}
+
+/*     ####### NAVBAR STYLE  #######   */
+
+.pokemon nav {
+  display: flex;
+  background-color: var(--main-bg-color);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+}
+.pokemon nav .prev-next {
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.pokemon nav .prev-next .btn {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pokemon nav .prev-next .btn button {
+  border-radius: 50px;
+  text-align: center;
+  border-style: none;
+  background: none;
+  transition: 0.1s;
+  padding: 0.8rem;
+  width: 300px;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.pokemon nav .prev-next button:hover {
+  border: 3px solid white;
+}
+
+.pokemon nav .prev-next .input-btn-poke {
+  margin: auto;
+
+  height: 50px;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.pokemon nav .prev-next .input-btn-poke .input-div {
+  width: 80%;
+  height: 50%;
+  display: flex;
+}
+
+.pokemon nav .prev-next .input-btn-poke input {
+  width: 100%;
+  background: none;
+  border-style: none;
+  outline-style: none;
+  border-bottom: 2px solid black;
+  text-align: center;
+  transition: 0.3s;
+}
+.pokemon nav .prev-next .input-btn-poke input:focus {
+  border-bottom: 1px solid white;
+}
+.pokemon nav .prev-next .input-btn-poke .btn-div {
+  border-style: none;
+
+  width: 20%;
+  height: 50%;
+  display: flex;
+}
+.pokemon nav .prev-next .input-btn-poke .btn-div button {
+  width: 100%;
+  background-color: black;
+  border-style: none;
+  border: none;
+  transition: 3s;
+}
+.pokemon nav .prev-next .input-btn-poke .btn-div button:hover {
+  border: 1px solid white;
+}
+
+/*     ####### TITTLE STYLE  #######   */
+
+.pokemon .tittle {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 4px;
+}
+.pokemon .tittle h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+/*     ####### MAIN STYLE  #######   */
+
+.pokemon main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.pokemon main .main-child {
+  display: flex;
+  padding: 2rem 0;
+  align-self: center;
+  height: 100%;
+  border-radius: 20px;
+  background-color: var(--main-bg-color);
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 1rem 0;
+  width: 100%;
+  transition: all 1s ease;
+}
+.pokemon main .main-child .main-child-child {
+  width: 50%;
+  height: 40;
+}
+.pokemon main .img-info-stat .img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pokemon main .img-info-stat .img-div img {
+  width: 100%;
+}
+.pokemon main .img-info-stat .info-type {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon main .img-info-stat .info-type .type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 3rem;
+}
+.pokemon main .img-info-stat .info-type .type .btn-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.pokemon main .img-info-stat .info-type .type .btn-type button {
+  width: 150px;
+  border-radius: 20px;
+  text-decoration: none;
+  border-style: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 3px solid white;
+  padding: 1rem;
+  display: flex;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+}
+/*  ####### EVO POKES DIV ########   */
+.pokemon main .evo-pokes {
+  display: flex;
+  gap: 2rem;
+}
+.pokemon main .evo-pokes .card-arrow {
+
+  display: flex;
+
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.pokemon main .evo-pokes .card-arrow .arrow{
+border: solid black;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 3px;
+transform: rotate(-45deg);
+}
+@media screen and (max-width: 888px) {
+  .pokemon main .evo-pokes {
+    flex-direction: column;
+  }
+  .pokemon main .evo-pokes .card-arrow{
+    flex-direction: column;
+  }
+  .pokemon main .evo-pokes .card-arrow .arrow{
+    transform: rotate(45deg);
+
+    
+  }
+}
+
+/*  ####### SPRITES-ABILITIES DIV ########   */
+.pokemon main .sprites-abilities {
+  width: 100%;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon main .sprites {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.pokemon main .sprites > div {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  transition: all 0.3s ease;
+}
+.pokemon main .sprites div h6 {
+  width: 70%;
+  letter-spacing: 2px;
+  text-align: center;
+
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  justify-self: flex-end;
+}
+.pokemon main .sprites div div {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.7);
+}
+
+.pokemon main .sprites div img {
+  width: 60%;
+  transition: all 0.3s ease;
+  position: relative;
+  top: -5%;
+
+  object-fit: cover;
+}
+.pokemon main .sprites div img:hover {
+  scale: 110%;
+}
+
+.pokemon main .abilities div {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.pokemon main .abilities div a {
+  text-decoration: none;
+}
+.pokemon main .abilities div h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 1.5em;
+  border-bottom: 1px solid white;
+}
+.pokemon main .abilities div p {
+  max-height: 300px;
+
+  overflow: auto;
+
+  padding: 1rem;
+}
+/* #######  LIST COMPONENT STYLE   #######*/
+
+.list {
+  height: 100%;
+  border-radius: 10px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.list div h3 {
+  border-bottom: 1px solid white;
+
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.list ul {
+  list-style-type: symbols("");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  width: 450px;
+  padding: 1.5rem;
+
+  border: 1px solid white;
+
+  box-shadow: 0px 0px 8px 1px rgba(255, 255, 255, 0.521);
+}
+.list ul li {
+  display: flex;
+  padding: 0.3rem;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom-style: dotted;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.list ul li h4 {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+.list ul li span {
+  text-transform: capitalize;
+  justify-self: flex-end;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+}
+
+/*#########    RESPONSIVE COMPONENT      ########### */
+
+.div-responsive {
+  animation: div-responsive 0.4s ease-in-out;
+}
+
+.btn-res {
+  width: 130px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-style: none;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.span-res {
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  transition: all 0.4s ease;
+
+  rotate: 45deg;
+}
+.span-res-active {
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  transition: all 0.4s ease;
+
+  rotate: -135deg;
+}
+/* ######## KEY FRAMES ############# */
+
+@keyframes div-responsive {
+  0% {
+    opacity: 0%;
+    transform: translatey(-100px);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* ######## MEDIA QUERIES ############# */
+
+@media screen and (max-width: 540px) {
+  .pokemon nav .prev-next .btn {
+    width: 100%;
+  }
+  .pokemon nav .prev-next .input-btn-poke {
+    width: 100%;
+  }
+  .pokemon nav .prev-next .input-btn-poke .btn-div button {
+    font-size: 0.6rem;
+  }
+  .pokemon main .stats .chart {
+    width: 100%;
+  }
+  .list ul {
+    width: 75vw;
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .pokemon .tittle h1 {
+    font-size: 9vmin;
+  }
+  .pokemon main .img-info-stat {
+    flex-direction: column;
+  }
+  .pokemon main .stats {
+    flex-direction: column;
+  }
+  .pokemon main .stats .extra-stats {
+    height: 600px;
+    order: 2;
+  }
+
+  .pokemon main .chart-stat {
+    order: 1;
+  }
+  .pokemon main .img-info-stat .img-div {
+    width: 80%;
+  }
+
+  .pokemon main .img-info-stat .info-type .type .btn-type button {
+    width: 18vmin;
+    height: 7vmin;
+  }
+  .pokemon main .abilities {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 445px) and (max-width: 1047px) {
+  .pokemon nav .prev-next {
+    flex-direction: column;
+  }
+  .pokemon nav .prev-next .input-btn-poke {
+    width: 70%;
+  }
+
+  .pokemon nav .prev-next .input-btn-poke input {
+    font-size: 0.6rem;
+  }
+
+  .pokemon nav .prev-next .input-btn-poke .btn-div button {
+    font-size: 0.7rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .pokemon {
+    width: 1400px;
+  }
+  .list div h3 {
+    font-size: 2.5rem;
+  }
+  .list ul li {
+    overflow: auto;
+  }
+  .list ul li h4 {
+    font-size: 1.5rem;
+  }
+  .list ul li span {
+    font-size: 1.5rem;
+  }
+}

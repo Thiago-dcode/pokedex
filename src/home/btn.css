@@ -1,0 +1,84 @@
+
+
+
+.fire button {
+    background-color: #D8380F;
+    
+}
+.bug button {
+    background-color: #94862E;
+    
+}
+.dark button {
+    background-color: #252426
+    
+}
+.dragon button {
+    background-color:#686DB8 ;
+    
+}
+.electric button {
+    background-color: #D48634;
+    
+}
+.fairy button {
+    background-color:#EFB7F0 ;
+    
+}
+.fighting button {
+    background-color: #7E3626;
+    
+}
+.flying button {
+    background-color: #6C79DA;
+    
+}
+.ghost button {
+    background-color: #575FA7;
+    
+}
+.grass button {
+    background-color: #79BF3E;
+    
+}
+.ground button {
+    background-color:#D9A24B ;
+    
+}
+.ice button {
+    background-color: #78D3F4;
+    
+}
+.normal button {
+    background-color:#A4A1A5 ;
+    
+}
+.poison button {
+    background-color:#7D4B79 ;
+    
+}
+.psychic button {
+    background-color: #E6454C;
+    
+}
+.rock button {
+    background-color:#92832C ;
+    
+}
+.steel button {
+    background-color: #949187;
+    
+}
+.water button {
+    background-color:#3892EC ;
+    
+}
+.selected button{
+
+    opacity: 0.8;
+
+    transform: scale(85%);
+    border: none;
+    
+}
+
